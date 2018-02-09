@@ -1,0 +1,7 @@
+rala_40_mongodb_dump
+.db
+.ipynb_checkpoints
+my_key.py
+*.pyc
+*.log
+*.gz

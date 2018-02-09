@@ -1,0 +1,31 @@
+version: '2'
+services:
+    myapp:
+        build: ./python
+        container_name: "myapp"
+        environment:
+            - NODE_ENV=development
+            - FOO=bar
+            - PYTHONPATH=/code/code
+        volumes:
+            - ./data:/home/app/data
+            - ./python/code:/code/code
+            - ./python/notebooks:/code/notebooks
+        ports:
+            - 8889:8888
+        links:
+            - mongodb
+        depends_on:
+            - mongodb
+    mongodb:
+        image: mongo:latest
+        container_name: "mongodb"
+        environment:
+          - MONGO_DATA_DIR=/data/db
+          - MONGO_LOG_DIR=/dev/null
+        volumes:
+          - ./.db:/data/db
+          - ./dbIO:/dbIO
+        ports:
+            - 27018:27017
+        command: mongod --smallfiles --logpath=/dev/null # --quiet
