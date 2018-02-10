@@ -14,7 +14,7 @@ The first time it will download all packages so it might take a while.
 
 ## Big Campaign Results
 
-[Cuca results ready for Mongo restore](https://www.dropbox.com/s/sy1fgcvkl5bni28/cuca.gz?dl=0)
+[RALA-40 results ready for Mongo restore](https://www.dropbox.com/sh/cpia9eoagj4uxmv/AABiOeRUnkecQYsuySuml3eRa?dl=0)
 
 
 ### Configurations
