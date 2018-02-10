@@ -12,7 +12,9 @@ docker-compose run
 The first time it will download all packages so it might take a while.
 
 
-## Big Campaign Results
+## Datasets
+
+The following dropbox link includes the complete dump of the mongo database used as well as the final edgelists for both AS level topologies (CAIDA and RALA-40).
 
 [RALA-40 results ready for Mongo restore](https://www.dropbox.com/sh/cpia9eoagj4uxmv/AABiOeRUnkecQYsuySuml3eRa?dl=0)
 
